@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title><%= title %></title>
+    <link REL="SHORTCUT ICON" HREF="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/baa9525a92.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body>
+    <header>  <!-- header--------------------------------------------------------------------------------- -->
+
+        <div class="header brand">
+            <a href="#">FIND A STORE</a>
+            <a href="http://localhost:9981/"><img id="Mlogo" src="images/main_logo.png" alt="logo"></a> 
+            <a id="cart" href="#"><i class="fas fa-shopping-bag"></i></a> 
+            <a id="sign_in" href="#">SIGN IN</a>
+            <a id="search_icon" href="#"><i class="fas fa-search"></i></a>
+        </div>
+
+        <div class="header bar">
+          <ul>
+
+            <li class="bar_click" onclick="currentDrop(1)"><a href="#">MENS</a></li>
+            <div class="drop_overlay"></div>
+            <div class="close_menu" onclick="closeMenu()"><a href="#">X</a></div>
+            <div class="drop_menu">
+              <img class="drop_img" src="images/drop_img_men.png">
+              <ul>
+                <li><h3>FEATURES</h3></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">TOMMY JEANS X LOONEY TUNES</a></li>
+                <li><a href="">Tommy Jeans</a></li>
+                <li><a href="">TOMMYXMERCEDES-BENZ</a></li>
+                <li><a href="">Summer Essentials</a></li>
+                <li><a href="">Hilfiger Collection</a></li>
+                <li><a href="">SALE</a></li>
+                <li><h3>EXPLORE</h3></li>
+                <li><a href="">Hilfiger Collection Lookbook</a></li>
+                <li><a href="">Tommy Hilfiger Adaptive</a></li>
+              </ul>
+              <ul>
+                <li><h3>CLOTHING</h3></li>
+                <li><a href="">Global Site</a></li>
+                <li><a href="">Corporate Responsibility</a></li>
+                <li><a href="">Sustainability</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Affiliate Program</a></li>
+                <li><a href="">Sitemap</a></li>
+              </ul>
+              <ul>
+                <li><h3>SHOES & ACCESSORIES</h3></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Interest Based Ads</a></li>
+                <li><a href="">Do Not Sell My Personal Information</a></li>
+                <li><a href="">CA Transparency in Supply Chain</a></li>
+                <li><a href="">UK Modern Slavery Statement</a></li>
+                <li><a href="">Brand Protection</a></li>
+                <li><a href="">Accessibility</a></li>
+              </ul>
+              <ul>
+                <li><h3>ADAPTIVE</h3></li>
+                <li><a href="">Tommy Hilfiger Club</a></li>
+              </ul>
+            </div>
+
+            <li class="bar_click" onclick="currentDrop(2)"><a href="#">WOMENS</a></li>     
+            <div class="drop_overlay"></div>
+            <div class="close_menu" onclick="closeMenu()"><a href="#">X</a></div>
+            <div class="drop_menu">
+              <img class="drop_img" src="images/drop_img_women.png">
+              <ul>
+                <li><h3>FEATURES</h3></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">TOMMY JEANS X LOONEY TUNES</a></li>
+                <li><a href="">Tommy Jeans</a></li>
+                <li><a href="">TOMMYXMERCEDES-BENZ</a></li>
+                <li><a href="">Summer Essentials</a></li>
+                <li><a href="">Hilfiger Collection</a></li>
+                <li><a href="">SALE</a></li>
+                <li><h3>EXPLORE</h3></li>
+                <li><a href="">Hilfiger Collection Lookbook</a></li>
+                <li><a href="">Tommy Hilfiger Adaptive</a></li>
+              </ul>
+              <ul>
+                <li><h3>CLOTHING</h3></li>
+                <li><a href="">Global Site</a></li>
+                <li><a href="">Corporate Responsibility</a></li>
+                <li><a href="">Sustainability</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Affiliate Program</a></li>
+                <li><a href="">Sitemap</a></li>
+              </ul>
+              <ul>
+                <li><h3>SHOES & ACCESSORIES</h3></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Interest Based Ads</a></li>
+                <li><a href="">Do Not Sell My Personal Information</a></li>
+                <li><a href="">CA Transparency in Supply Chain</a></li>
+                <li><a href="">UK Modern Slavery Statement</a></li>
+                <li><a href="">Brand Protection</a></li>
+                <li><a href="">Accessibility</a></li>
+              </ul>
+              <ul>
+                <li><h3>ADAPTIVE</h3></li>
+                <li><a href="">Tommy Hilfiger Club</a></li>
+              </ul>
+            </div>
+            
+            <li class="bar_click"  onclick="currentDrop(3)"><a href="#">KIDS</a></li>
+            <div class="drop_overlay">
+            </div>
+            <div class="close_menu" onclick="closeMenu()"><a href="#">X</a></div>
+            <div class="drop_menu">
+              <img class="drop_img" src="images/drop_img_kid.png">
+              <ul>
+                <li><h3>FEATURES</h3></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">TOMMY JEANS X LOONEY TUNES</a></li>
+                <li><a href="">Tommy Jeans</a></li>
+                <li><a href="">TOMMYXMERCEDES-BENZ</a></li>
+                <li><a href="">Summer Essentials</a></li>
+                <li><a href="">Hilfiger Collection</a></li>
+                <li><a href="">SALE</a></li>
+                <li><h3>EXPLORE</h3></li>
+                <li><a href="">Hilfiger Collection Lookbook</a></li>
+                <li><a href="">Tommy Hilfiger Adaptive</a></li>
+              </ul>
+              <ul>
+                <li><h3>CLOTHING</h3></li>
+                <li><a href="">Global Site</a></li>
+                <li><a href="">Corporate Responsibility</a></li>
+                <li><a href="">Sustainability</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Affiliate Program</a></li>
+                <li><a href="">Sitemap</a></li>
+              </ul>
+              <ul>
+                <li><h3>SHOES & ACCESSORIES</h3></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Interest Based Ads</a></li>
+                <li><a href="">Do Not Sell My Personal Information</a></li>
+                <li><a href="">CA Transparency in Supply Chain</a></li>
+                <li><a href="">UK Modern Slavery Statement</a></li>
+                <li><a href="">Brand Protection</a></li>
+                <li><a href="">Accessibility</a></li>
+              </ul>
+              <ul>
+                <li><h3>ADAPTIVE</h3></li>
+                <li><a href="">Tommy Hilfiger Club</a></li>
+              </ul>
+            </div>
+
+            <li class="bar_click"  onclick="currentDrop(4)"><a href="#">HOME</a></li>
+            <div class="drop_overlay">
+            </div>
+            <div class="close_menu" onclick="closeMenu()"><a href="#">X</a></div>
+            <div class="drop_menu">
+              <ul>
+                <li><h3>FEATURES</h3></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">TOMMY JEANS X LOONEY TUNES</a></li>
+                <li><a href="">Tommy Jeans</a></li>
+                <li><a href="">TOMMYXMERCEDES-BENZ</a></li>
+                <li><a href="">Summer Essentials</a></li>
+                <li><a href="">Hilfiger Collection</a></li>
+                <li><a href="">SALE</a></li>
+                <li><h3>EXPLORE</h3></li>
+                <li><a href="">Hilfiger Collection Lookbook</a></li>
+                <li><a href="">Tommy Hilfiger Adaptive</a></li>
+              </ul>
+              <ul>
+                <li><h3>CLOTHING</h3></li>
+                <li><a href="">Global Site</a></li>
+                <li><a href="">Corporate Responsibility</a></li>
+                <li><a href="">Sustainability</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Affiliate Program</a></li>
+                <li><a href="">Sitemap</a></li>
+              </ul>
+              <ul>
+                <li><h3>SHOES & ACCESSORIES</h3></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Interest Based Ads</a></li>
+                <li><a href="">Do Not Sell My Personal Information</a></li>
+                <li><a href="">CA Transparency in Supply Chain</a></li>
+                <li><a href="">UK Modern Slavery Statement</a></li>
+                <li><a href="">Brand Protection</a></li>
+                <li><a href="">Accessibility</a></li>
+              </ul>
+              <ul>
+                <li><h3>ADAPTIVE</h3></li>
+                <li><a href="">Tommy Hilfiger Club</a></li>
+              </ul>
+            </div>   
+
+            <li class="bar_click"  onclick="currentDrop(1)"><a href="#">EXTRA 40% OFF SALE</a></li>
+
+          </ul>
+        </div>
+        
+      
+    </header>
