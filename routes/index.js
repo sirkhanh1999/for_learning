@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/prd2', function(req, res, next) {
   res.render('prd2', { 
-    title: 'PRODUCT 2 : Navy long shir - TOMMY HILFIGERR', 
+    title: 'PRODUCT 2 : Navy long shir - TOMMY HILFIGER', 
     prd_name : 'Navy long shirt',
     price : "104$",
     prd_color : "light pink",
