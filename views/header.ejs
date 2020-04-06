@@ -2,7 +2,14 @@
 <html>
   
   <head>
-    <title><%= title %></title>
+        <!-- load data from json file to EJS page  -->
+    <% dataJson.product.forEach(function(content){ %>
+    <% if(content.prd_id == prd_id){ %> 
+      <title><%= content.prd_title %></title>
+    <% 
+    }
+    }) 
+    %> 
     <link REL="SHORTCUT ICON" HREF="images/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -176,7 +176,10 @@ li{
     font-size: 13px;
   }
 
-
+  .home_centre_img{
+    width: 100%;
+    margin-top: 110px;
+  }
 
 
 /*  centre content -------------------------------------------------------------------------- */

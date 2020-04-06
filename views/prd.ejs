@@ -1,8 +1,11 @@
 
-
 <!-- // embed the header module to this page -->
 <% include header %> 
 
+
+<!-- load data from json file to EJS page (using loop to catch product ID) -->
+<% dataJson.product.forEach(function(content){ %>
+    <% if(content.prd_id == prd_id){ %> 
 
     <!-- main container ------------------------------------------------------------------------------------------------- -->
 
@@ -11,36 +14,35 @@
       <p id="sale_infor" >YOUR SAFETY IS OUR PRIORITY. OUR NORTH AMERICA STORES ARE CLOSED UNTIL 3/29.<u> LEARN MORE</u></p>
 
       <div id="breadscrum">
-        <a href="">Home</a> /
+        <a href="/">Home</a> /
         <a href="">Mens</a> /
-        <a href="">Jeans</a> /
-        <a id="active_bread" href="#"><%= prd_name  %> </a>
+        <a id="active_bread" href=""><%= content.prd_name  %> </a>
       </div>
 
       <div id="main_infor">
         <!-- thumbnail images -->
         <section id="prd_img">
           <div id="thum_img">
-              <img onclick="currentSlide(1)" class="thum_prd" src="images/prd4/prd_img1.png" alt="">
-              <img onclick="currentSlide(2)" class="thum_prd" src="images/prd4/prd_img2.png" alt="">
-              <img onclick="currentSlide(3)" class="thum_prd" src="images/prd4/prd_img3.png" alt="">
-              <img onclick="currentSlide(4)" class="thum_prd" src="images/prd4/prd_img4.png" alt="">                                        
+              <img onclick="currentSlide(1)" class="thum_prd" src="<%= content.prd_img[0] %>" alt="">
+              <img onclick="currentSlide(2)" class="thum_prd" src="<%= content.prd_img[1] %>" alt="">
+              <img onclick="currentSlide(3)" class="thum_prd" src="<%= content.prd_img[2] %>" alt="">
+              <img onclick="currentSlide(4)" class="thum_prd" src="<%= content.prd_img[3] %>" alt="">                                        
           </div>
 
           <!-- big images -->
           <div id="big_img">
-            <img class="big_prd active_img" src="images/prd4/prd_img1.png" alt="">
-            <img class="big_prd" src="images/prd4/prd_img2.png" alt="">
-            <img class="big_prd" src="images/prd4/prd_img3.png" alt="">
-            <img class="big_prd" src="images/prd4/prd_img4.png" alt="">   
+            <img class="big_prd active_img" src="<%= content.prd_img[0] %>" alt="">
+            <img class="big_prd" src="<%= content.prd_img[1] %>" alt="">
+            <img class="big_prd" src="<%= content.prd_img[2] %>" alt="">
+            <img class="big_prd" src="<%= content.prd_img[3] %>" alt="">   
           </div>
         </section>
 
         <section id="prd_option">
           <p class="prd_type">TOMMY JEANS</p>
-          <h2 class="prd_name"><%= prd_name  %> </h2>
-          <p class="prd_price"><%= price  %> </p>
-          <p class="small_silver prd_color">Color: <span style="color : navy;"><%= prd_color  %> </span></p>
+          <h2 class="prd_name"><%= content.prd_name  %> </h2>
+          <p class="prd_price"><%= content.price  %> </p>
+          <p class="small_silver prd_color">Color: <span style="color : navy;"><%= content.prd_color  %> </span></p>
           <!-- color seclector button -->
           <div class="color_border">
           <a role="radio"><img class="prd_color_button" src="images/color_select.png"></a>
@@ -92,8 +94,15 @@
               <li>93% cotton, 4% elastane, 3% polyester.</li>
               <li>Imported.</li>
             </ul>
-            <p style="padding-top: 10px;">Style #:  <span><%= prd_id  %></span></p>
+            <p style="padding-top: 10px;">Style: #<span><%= content.prd_id  %></span></p>
           </div>
+
+  <% 
+    }       
+  }) 
+  %> 
+
+
 
           <!-- term menu ............... -->
           <div class="prd_term">
@@ -143,38 +152,14 @@
           <div class="relate_prd">
 
             <% dataJson.product.forEach(function(prd){ %>     <!--  include Json data to html -->
-            
-            
               <div class="relate_img">
-              <a href="<%= prd.prd_url %>">
-                <img src="<%= prd.prd_feature_img %>">
-                <h4 class="relate_h4"><%= prd.prd_name %></h4>
-                <p class="relate_p"><%= prd.prd_price %> </p>
-              </a>
+                <a href="/<%= prd.prd_id %>">
+                  <img src="<%= prd.prd_feature_img %>">
+                  <h4 class="relate_h4"><%= prd.prd_name %></h4>
+                  <p class="relate_p"><%= prd.prd_price %> </p>
+                </a>
               </div>
-  
             <% }) %> 
-
-            <!-- 
-            <div class="relate_img">
-              <img src="images/relate_prd4.png">
-              <h4>RAW DENIM STRAIGHT FIT JEAN</h4>
-              <p>87.99$</p>
-            </div>
-
-            <div class="relate_img">
-              <img src="images/relate_prd4.png">
-              <h4>MID RISE SLIM FIT JEAN</h4>
-              <p>126$</p>
-            </div>     
-
-            <div class="relate_img">
-              <img src="images/relate_prd4.png">
-              <h4>SLIM FIT JEAN</h4>
-              <p>211$</p>
-            </div> 
-            -->
-
 
           </div>  
         </section>

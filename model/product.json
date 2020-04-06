@@ -1,48 +1,40 @@
 {
     "product" : [
         {
-            "prd_title" : "Product 1 - Tommy Hilfiger",
-            "prd_url" : "/",
-            "prd_breadscrum" : "prd_1",
+            "prd_title" : "Product 1 : Modern skinny Jean - Tommy Hilfiger",
             "prd_feature_img" : "./images/prd1/prd_img1.png",
             "prd_img" : ["./images/prd1/prd_img1.png","./images/prd1/prd_img2.png","./images/prd1/prd_img3.png","./images/prd1/prd_img4.png"],
-            "prd_name" : "Skinny Jean #1",
+            "prd_name" : "Modern skinny Jean",
             "prd_price" : "91$",
             "prd_color" : "dark blue",
-            "prd_id" : "sj01"
+            "prd_id" : "skinny_jeans"
          },
          {
-            "prd_title" : "Product 2 - Tommy Hilfiger",
-            "prd_url" : "/prd2",
-            "prd_breadscrum" : "prd_2",
+            "prd_title" : "Product 2 : Navy long shirt - Tommy Hilfiger",
             "prd_feature_img" : "./images/prd2/prd_img1.png",
             "prd_img" : ["./images/prd2/prd_img1.png","./images/prd2/prd_img2.png","./images/prd2/prd_img3.png","./images/prd2/prd_img4.png"],
             "prd_name" : "Navy long shirt",
             "prd_price" : "104$",
             "prd_color" : "light pink",
-            "prd_id" : "sj02"
+            "prd_id" : "navy_shirt"
          },
          {
-            "prd_title" : "Product 3 - Tommy Hilfiger",
-            "prd_url" : "/prd3",
-            "prd_breadscrum" : "prd_3",
+            "prd_title" : "Product 3 : Travel bag US - Tommy Hilfiger",
             "prd_feature_img" : "./images/prd3/prd_img1.png",
             "prd_img" : ["./images/prd3/prd_img1.png","./images/prd3/prd_img2.png","./images/prd3/prd_img3.png","./images/prd3/prd_img4.png"],
             "prd_name" : "Travel bag US",
             "prd_price" : "58$",
             "prd_color" : "Jet black",
-            "prd_id" : "rj01"
+            "prd_id" : "travel_bag"
          },
          {
-            "prd_title" : "Product 4 - Tommy Hilfiger",
-            "prd_url" : "/prd4",
-            "prd_breadscrum" : "prd_4",
+            "prd_title" : "Product 4 : Red jacket - Tommy Hilfiger",
             "prd_feature_img" : "./images/prd4/prd_img1.png",
             "prd_img" : ["./images/prd4/prd_img1.png","./images/prd4/prd_img2.png","./images/prd4/prd_img3.png","./images/prd4/prd_img4.png"],
             "prd_name" : "Red jacket",
             "prd_price" : "82$",
             "prd_color" : "Origin blue",
-            "prd_id" : "rj02"
+            "prd_id" : "red_jacket"
          }
     ]
 }
