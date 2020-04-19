@@ -4,37 +4,41 @@
             "prd_title" : "Product 1 : Modern skinny Jean - Tommy Hilfiger",
             "prd_feature_img" : "./images/prd1/prd_img1.png",
             "prd_img" : ["./images/prd1/prd_img1.png","./images/prd1/prd_img2.png","./images/prd1/prd_img3.png","./images/prd1/prd_img4.png"],
-            "prd_name" : "Modern skinny Jean",
+            "prd_name" : "MODERN SKINNY JEANS",
             "prd_price" : "91$",
             "prd_color" : "dark blue",
-            "prd_id" : "skinny_jeans"
+            "prd_id" : "skinny_jeans",
+            "prd_des" : "Hilfiger men's jean. Styled from super stretch denim in a vintage wash with authentic fading, this pair looks and feels like you were wearing them since, well, since before they were vintage. Part of our Tommy Jeans collection."
          },
          {
             "prd_title" : "Product 2 : Navy long shirt - Tommy Hilfiger",
             "prd_feature_img" : "./images/prd2/prd_img1.png",
             "prd_img" : ["./images/prd2/prd_img1.png","./images/prd2/prd_img2.png","./images/prd2/prd_img3.png","./images/prd2/prd_img4.png"],
-            "prd_name" : "Navy long shirt",
+            "prd_name" : "NAVY LONG SHIRT",
             "prd_price" : "104$",
             "prd_color" : "light pink",
-            "prd_id" : "navy_shirt"
+            "prd_id" : "navy_shirt",
+            "prd_des" : "Tommy Hilfiger men's shirt. Designed to be worn casually rumpled, our linen and cotton shirt is coveted for its lightweight breathability."
          },
          {
             "prd_title" : "Product 3 : Travel bag US - Tommy Hilfiger",
             "prd_feature_img" : "./images/prd3/prd_img1.png",
             "prd_img" : ["./images/prd3/prd_img1.png","./images/prd3/prd_img2.png","./images/prd3/prd_img3.png","./images/prd3/prd_img4.png"],
-            "prd_name" : "Travel bag US",
+            "prd_name" : "TRAVEL BAG US",
             "prd_price" : "58$",
             "prd_color" : "Jet black",
-            "prd_id" : "travel_bag"
+            "prd_id" : "travel_bag",
+            "prd_des" : " Made with miDori® bioWick, a plant-based finishing agent that helps fabric absorb sweat, wick away moisture and dry faster. Compared to standard wicking finishes it has an (up to 8 times) lower carbon footprint."
          },
          {
             "prd_title" : "Product 4 : Red jacket - Tommy Hilfiger",
             "prd_feature_img" : "./images/prd4/prd_img1.png",
             "prd_img" : ["./images/prd4/prd_img1.png","./images/prd4/prd_img2.png","./images/prd4/prd_img3.png","./images/prd4/prd_img4.png"],
-            "prd_name" : "Red jacket",
+            "prd_name" : "ORIGIN SPORT COAT",
             "prd_price" : "82$",
             "prd_color" : "Origin blue",
-            "prd_id" : "red_jacket"
+            "prd_id" : "red_jacket",
+            "prd_des" : "This lightweight layer was designed with a half-zip closure to throw on over your workout gear as a warm up. Made of breathable, water-repellent material for comfortable wear, rain or shine."
          }
     ]
 }

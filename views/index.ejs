@@ -2,12 +2,6 @@
 <html>
   <head>
     <title>HOME PAGE - TOMMY HILFIGER</title>
-    <link REL="SHORTCUT ICON" HREF="images/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="/javascripts/script.js"></script>
-    <script src="https://kit.fontawesome.com/baa9525a92.js" crossorigin="anonymous"></script>
   </head>
 
 
@@ -32,7 +26,7 @@
 
             <% dataJson.product.forEach(function(prd){ %>     <!--  include Json data to html -->
               <div class="relate_img">
-                <a href="/<%= prd.prd_id %>">
+                <a href="/.<%= prd.prd_id %>">
                   <img src="<%= prd.prd_feature_img %>">
                   <h4 class="relate_h4"><%= prd.prd_name %></h4>
                   <p class="relate_p"><%= prd.prd_price %> </p>
@@ -74,8 +68,8 @@
 
     <!--Up to top / bottom .............................. -->
     <div class="top_bottom" id="top_bottom">
-      <a href="#"><img class="turn_top" src="images/up_to_top.png"></a>
-      <a href="#end"><img class="turn_bottom" src="images/up_to_bottom.png"></a>
+      <a href="#"><i class="fas fa-caret-square-up turn_ctrl"></i></a>
+      <a href="#end"><i class="fas fa-caret-square-down turn_ctrl"></i></a>
     </div>
 
 

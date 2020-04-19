@@ -1,0 +1,56 @@
+
+
+<!-- // embed the header module to this page -->
+<% include header %> 
+
+    
+    <div id="container" style="background-color: #ededed;">
+        <div id="main_infor" style="padding: 0% 30%;">
+        
+          <div style="background-color: white; padding:15px;">
+            <h1 class="display-3">Upload form</h1>
+            <hr>    
+    
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="form-group" style="margin-top: 15px;">
+                    <input type="text" required="required class="form_control" name="prd_label" placeholder="Product Label"/>
+                    <input type="text" required="required class="form_control" name="prd_price" placeholder="Price"/>
+                    <input type="text" required="required class="form_control" name="prd_color" placeholder="Color"/>
+                    <input type="text" required="required class="form_control" name="prd_id" placeholder="Product ID"/>       
+                    <input type="text" required="required class="form_control" name="prd_url" placeholder="Product URL"/>   
+                    <textarea required="required class="form_control" name="prd_desc" placeholder="Description"></textarea>   
+                    <input type="file" required="required" name="prd_img" />
+                </div>
+
+                <button type="submit" class="buy_button upload_btn">UPLOAD</button>
+            </form>
+
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- fixed feedback ...................... -->
+    <div class="feedback">
+        <a href="#">
+        <img src="images/feedback.png" width="40" height="130">
+        </a>
+      </div>
+  
+    <!--Up to top / bottom .............................. -->
+    <div class="top_bottom" id="top_bottom">
+        <a href="#"><i class="fas fa-caret-square-up turn_ctrl"></i></a>
+        <a href="#end"><i class="fas fa-caret-square-down turn_ctrl"></i></a>
+      </div>
+  
+
+    
+
+
+
+  
+  <!-- // embed the footer module to this page -->
+  <% include footer %>
+  

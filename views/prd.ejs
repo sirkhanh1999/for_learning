@@ -41,7 +41,7 @@
         <section id="prd_option">
           <p class="prd_type">TOMMY JEANS</p>
           <h2 class="prd_name"><%= content.prd_name  %> </h2>
-          <p class="prd_price"><%= content.price  %> </p>
+          <p class="prd_price"><%= content.prd_price  %> </p>
           <p class="small_silver prd_color">Color: <span style="color : navy;"><%= content.prd_color  %> </span></p>
           <!-- color seclector button -->
           <div class="color_border">
@@ -57,13 +57,13 @@
 
             <ul role="radiogroup">
                   <li onclick="redit()" role="radio" class="available" id="size1"><span>29</span></li>
-                  <li role="radio" class="available"><span>30</span></li>
-                  <li role="radio" class="available"><span>31</span></li>
-                  <li role="radio" class="available"><span>32</span></li>
-                  <li role="radio" class="available"><span>33</span></li>
-                  <li role="radio" class="available"><span>34</span></li>               
-                  <li role="radio" class="available"><span>36</span></li>          
-                  <li role="radio" class="available"><span>38</span></li>
+                  <li role="radio" class="available sizeNumber"><span>30</span></li>
+                  <li role="radio" class="available sizeNumber"><span>31</span></li>
+                  <li role="radio" class="available sizeNumber"><span>32</span></li>
+                  <li role="radio" class="available sizeNumber"><span>33</span></li>
+                  <li role="radio" class="available sizeNumber"><span>34</span></li>               
+                  <li role="radio" class="available sizeNumber"><span>36</span></li>          
+                  <li role="radio" class="available sizeNumber"><span>38</span></li>
             </ul>               
           </div>
 
@@ -71,9 +71,9 @@
           <div id="length" class="size_selector">
             <p class="small_silver">Length :</p>
             <ul role="radiogroup">
-                  <li role="radio" class="available"><span>29</span></li>
-                  <li role="radio" class="available"><span>30</span></li>
-                  <li role="radio" class="available"><span>31</span></li>
+                  <li role="radio" class="available lengthNumber"><span>29</span></li>
+                  <li role="radio" class="available lengthNumber"><span>30</span></li>
+                  <li role="radio" class="available lengthNumber"><span>31</span></li>
             </ul>               
           </div>
 
@@ -86,7 +86,7 @@
 
           <div class="prd_des">
             <p>
-              Hilfiger men's jean. Styled from super stretch denim in a vintage wash with authentic fading, this pair looks and feels like you were wearing them since, well, since before they were vintage. Part of our Tommy Jeans collection.
+              <%= content.prd_des  %>   
             </p>
             <br>
             <ul>
@@ -146,20 +146,27 @@
           </div>
         </section>
 
-<!-- related product ..................................... -->
+<!-- viewed product ..................................... -->
         <section class="relation">
-          <h2> CUSTOMER ALSO BOUGHT</h2>
+          <h2>YOUR VIEWED PRODUCTS</h2>
           <div class="relate_prd">
+          
+          <% List.forEach(function(id){ %>                      
+            <% dataJson.product.forEach(function(prd){ %> 
+              <% if(prd.prd_id == id){ %> 
 
-            <% dataJson.product.forEach(function(prd){ %>     <!--  include Json data to html -->
               <div class="relate_img">
-                <a href="/<%= prd.prd_id %>">
+                <a href="/.<%= prd.prd_id %>">
                   <img src="<%= prd.prd_feature_img %>">
                   <h4 class="relate_h4"><%= prd.prd_name %></h4>
                   <p class="relate_p"><%= prd.prd_price %> </p>
                 </a>
               </div>
-            <% }) %> 
+
+          <% }
+           }) 
+        }) 
+        %> 
 
           </div>  
         </section>
@@ -171,8 +178,8 @@
             <p>For a 20% off welcome offer and much more</p>
           </div>
           <div class="join_right">
-            <input type="text" placeholder=" Your Email" id="emailSub" name="email_sub" value="">
-            <span><button class="subscribe" onclick="showSub()">SUBSCRIBE</button></span>
+            <input type="text" placeholder=" Your Email" id="emailSub" name="email_sub" required="required" />
+            <span><button type="submit" class="subscribe" onclick="showSub()">SUBSCRIBE</button></span>
             <div>
               <span class="agree_check"><input type="checkbox" aria-required="true"></span>
               <span class="agree_text" id="end">
@@ -195,11 +202,9 @@
 
     <!--Up to top / bottom .............................. -->
     <div class="top_bottom" id="top_bottom">
-      <a href="#"><img class="turn_top" src="images/up_to_top.png"></a>
-      <a href="#end"><img class="turn_bottom" src="images/up_to_bottom.png"></a>
+      <a href="#"><i class="fas fa-caret-square-up turn_ctrl"></i></a>
+      <a href="#end"><i class="fas fa-caret-square-down turn_ctrl"></i></a>
     </div>
-
-
 
 <!-- // embed the footer module to this page -->
 <% include footer %>

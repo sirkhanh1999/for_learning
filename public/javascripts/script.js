@@ -1,3 +1,5 @@
+
+
 // aler after click buy button............................................
 function buyIt(){
     alert("Added to cart!")
@@ -76,8 +78,13 @@ function closeMenu(){
 // show subscribe infor .........................
 
 function showSub(){
-  var email = document.getElementById("emailSub").elements["email_sub"].value;
-  alert(email + " is subscribed! Thankyou!");
+  var email = document.getElementById("emailSub").value;
+  if(email == ""){
+    alert("ALERT : You have to input email !!!");
+  }
+  else{
+    alert( email + " is subscribed! Thankyou!");
+  }
 }
 
 
